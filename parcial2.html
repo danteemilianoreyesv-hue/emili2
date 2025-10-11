@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Segundo Parcial - Semana 4 y 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-nombre">
+      <img src="img/dgeti.png" alt="Logo CBTIS 162">
+      <span>CBTis 162</span>
+    </div>
+    <div class="titulo">
+      <h1>Segundo Parcial</h1>
+      <p>Semana 4 y 5</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="parcial1.html">Parcial 1</a></li>
+      <li><a href="parcial2.html" class="activo">Parcial 2</a></li>
+      <li><a href="parcial3.html">Parcial 3</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Temas del Segundo Parcial</h2>
+
+      <div class="tarjeta">
+        <h3>Sentencia while</h3>
+        <p>
+          La sentencia <b>while</b> permite ejecutar un bloque de código repetidamente mientras una condición sea verdadera.  
+          Antes de cada iteración, el programa evalúa la condición; si esta se cumple, se ejecutan las instrucciones internas.  
+          Este ciclo es útil cuando no sabemos con exactitud cuántas veces se repetirá un proceso, por ejemplo, leer datos de un archivo hasta llegar al final o solicitar datos al usuario hasta que ingrese un valor válido.  
+          Es importante incluir dentro del ciclo una instrucción que modifique la condición, para evitar bucles infinitos.
+        </p>
+        <img src="img/while.png" alt="Ejemplo de ciclo while en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Sentencia do...while</h3>
+        <p>
+          El ciclo <b>do...while</b> funciona de manera similar al <b>while</b>, con la diferencia de que se ejecuta al menos una vez.  
+          Esto se debe a que la condición se evalúa al final del bloque, no al inicio.  
+          Es ideal para situaciones en las que necesitamos que el código se ejecute primero, como mostrar un menú interactivo o pedir una contraseña, y luego decidir si repetirlo o no según la respuesta del usuario.  
+          Su estructura garantiza que el bloque se ejecute mínimo una vez, incluso si la condición resulta falsa en la primera evaluación.
+        </p>
+        <img src="img/dowhile.png" alt="Ejemplo de do while en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Sentencia for</h3>
+        <p>
+          La sentencia <b>for</b> se utiliza cuando conocemos la cantidad exacta de veces que queremos que se repita un bloque de código.  
+          Está compuesta por tres partes: la inicialización de una variable, la condición de repetición y la actualización (normalmente incremento o decremento).  
+          Es muy práctica para recorrer secuencias numéricas, mostrar tablas de multiplicar o procesar datos en un rango determinado.  
+          Gracias a su estructura compacta, es uno de los ciclos más usados en programación.
+        </p>
+        <img src="img/for.png" alt="Ejemplo de ciclo for en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Sentencia foreach</h3>
+        <p>
+          El ciclo <b>foreach</b> está diseñado para recorrer arreglos y colecciones de datos de manera sencilla.  
+          A diferencia del <b>for</b>, no requiere un contador o índice, ya que automáticamente toma cada elemento del arreglo.  
+          Es perfecto para mostrar listas de nombres, productos, calificaciones u otros datos almacenados en un array.  
+          Además, se puede usar con arrays asociativos para acceder tanto a la clave como al valor de cada elemento.
+        </p>
+        <img src="img/foreach.png" alt="Ejemplo foreach en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Arrays</h3>
+        <p>
+          Un <b>array</b> en PHP es una estructura que permite almacenar varios valores dentro de una misma variable.  
+          Los arrays pueden ser de dos tipos: <b>indexados</b> (con posiciones numéricas) o <b>asociativos</b> (con claves personalizadas).  
+          Son esenciales para manejar grandes cantidades de información, como listas de usuarios, registros o resultados de una base de datos.  
+          También pueden ser multidimensionales, lo que permite crear tablas o matrices de datos más complejas.
+        </p>
+        <img src="img/arrays.png" alt="Ejemplo de arrays en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Sentencia $_POST</h3>
+        <p>
+          La variable superglobal <b>$_POST</b> se usa para recopilar información enviada desde un formulario HTML mediante el método POST.  
+          Los datos enviados de esta forma no son visibles en la URL, lo que proporciona mayor seguridad al manejar información confidencial.  
+          Se usa comúnmente para enviar contraseñas, datos personales o formularios de contacto.  
+          En el servidor, PHP puede acceder a los valores enviados y procesarlos fácilmente.
+        </p>
+        <img src="img/post.png" alt="Ejemplo de uso de POST en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Sentencia $_GET</h3>
+        <p>
+          La variable <b>$_GET</b> obtiene información desde la URL del navegador.  
+          Este método es útil para enviar parámetros o filtros sin necesidad de usar un formulario.  
+          Los datos son visibles después del signo <b>?</b> y se pueden capturar con PHP para realizar acciones dinámicas, como mostrar resultados de búsqueda, filtrar productos o identificar usuarios.  
+          Sin embargo, no es recomendable para enviar información sensible ya que los datos pueden verse fácilmente.
+        </p>
+        <img src="img/get.png" alt="Ejemplo de uso de GET en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Función isset()</h3>
+        <p>
+          La función <b>isset()</b> permite verificar si una variable ha sido declarada y contiene un valor distinto de NULL.  
+          Es muy útil para prevenir errores al trabajar con formularios o variables opcionales.  
+          Por ejemplo, antes de usar un valor recibido de un formulario, se puede comprobar si fue enviado con <b>isset()</b>.  
+          También se usa junto con <b>$_POST</b> o <b>$_GET</b> para validar si un campo fue completado por el usuario.
+        </p>
+        <img src="img/isset.png" alt="Ejemplo de isset en PHP">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Sentencia PDO</h3>
+        <p>
+          <b>PDO (PHP Data Objects)</b> es una herramienta moderna que facilita la conexión entre PHP y bases de datos, como MySQL, PostgreSQL o SQLite.  
+          A diferencia de las funciones tradicionales, PDO ofrece una interfaz más segura y flexible.  
+          Permite realizar consultas preparadas, lo que ayuda a prevenir ataques de inyección SQL y mejora el rendimiento.  
+          También simplifica el manejo de errores gracias a su sistema de excepciones.  
+          Es una de las formas más profesionales y recomendadas para trabajar con bases de datos en PHP.
+        </p>
+        <img src="img/pdo.png" alt="Ejemplo de conexión PDO en PHP">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
