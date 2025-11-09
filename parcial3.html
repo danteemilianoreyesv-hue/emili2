@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tercer Parcial - Semana 6 y 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-nombre">
+      <img src="img/dgeti.png" alt="Logo CBTIS 162">
+      <span>CBTis 162</span>
+    </div>
+    <div class="titulo">
+      <h1>Tercer Parcial</h1>
+      <p>Semana 6 y 7</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="parcial1.html">Parcial 1</a></li>
+      <li><a href="parcial2.html">Parcial 2</a></li>
+      <li><a href="parcial3.html" class="activo">Parcial 3</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Temas del Tercer Parcial</h2>
+
+      <div class="tarjeta">
+        <h3>Resumen de temas vistos en clase</h3>
+        <p>
+          En este parcial se aprendió a usar herramientas de desarrollo de aplicaciones sin código como <b>AppSheet</b>.  
+          También se estudiaron los distintos tipos de datos que pueden usarse dentro de una base de datos y en las aplicaciones creadas.  
+          Se reforzaron conceptos como las relaciones entre tablas y la estructura de las bases de datos.
+        </p>
+        <img src="img/appsheet-intro.png" alt="Introducción a AppSheet">
+      </div>
+
+      <div class="tarjeta">
+        <h3>¿Qué es AppSheet?</h3>
+        <p>
+          <b>AppSheet</b> es una plataforma de Google que permite crear aplicaciones personalizadas sin necesidad de programar.  
+          Funciona a partir de hojas de cálculo o bases de datos y convierte la información en aplicaciones móviles o web totalmente funcionales.  
+          Es muy usada en empresas y escuelas para crear apps internas de control, registro o inventario.
+        </p>
+        <img src="img/appsheet.png" alt="AppSheet plataforma">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Elementos importantes</h3>
+        <p>
+          Algunos elementos principales de AppSheet son:  
+          <ul>
+            <li><b>Data:</b> donde se gestionan las tablas y columnas.</li>
+            <li><b>UX:</b> define el diseño visual y cómo se muestran los datos.</li>
+            <li><b>Behavior:</b> permite agregar acciones y automatizaciones.</li>
+            <li><b>Security:</b> controla los accesos y permisos.</li>
+          </ul>
+          Estos apartados permiten construir una app completa sin escribir código.
+        </p>
+        <img src="img/elementos.png" alt="Elementos de AppSheet">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Bases de datos</h3>
+        <p>
+          Una base de datos es un conjunto organizado de información que se puede almacenar y manipular fácilmente.  
+          En AppSheet, las bases de datos más comunes son hojas de cálculo de Google Sheets o Excel.  
+          Cada hoja o tabla representa una entidad con sus propios campos (columnas).
+        </p>
+        <img src="img/basedatos.png" alt="Ejemplo de base de datos">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Relaciones entre tablas</h3>
+        <p>
+          Las relaciones entre tablas permiten conectar información entre diferentes partes de una app.  
+          Por ejemplo, una tabla de “Clientes” puede estar relacionada con otra de “Pedidos”.  
+          Estas conexiones hacen que los datos sean más eficientes y fáciles de consultar.
+        </p>
+        <img src="img/relaciones.png" alt="Relaciones entre tablas">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Texto</h3>
+        <p>
+          Este tipo de dato se utiliza para almacenar palabras, frases o cadenas de caracteres.  
+          Por ejemplo: nombres, direcciones o descripciones.  
+          En AppSheet, el tipo “Text” se usa para cualquier entrada de texto simple.
+        </p>
+        <img src="img/tipo-texto.png" alt="Tipo de dato texto">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Números</h3>
+        <p>
+          El tipo numérico permite registrar valores enteros o decimales, como precios, cantidades o calificaciones.  
+          AppSheet los interpreta para hacer cálculos o comparaciones dentro de la app.
+        </p>
+        <img src="img/numeros.png" alt="Tipo de dato número">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Fecha</h3>
+        <p>
+          El tipo <b>Date</b> sirve para almacenar fechas, y puede combinarse con <b>Time</b> para incluir horas.  
+          Es útil para registrar fechas de registro, vencimiento o programación de eventos.
+        </p>
+        <img src="img/time.png" alt="Tipo de dato fecha">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Contenido 1 y 2</h3>
+        <p>
+          Los tipos de contenido incluyen imágenes, archivos, firmas, escáneres de código y más.  
+          Permiten capturar información visual directamente desde el dispositivo.  
+          AppSheet los guarda en la base de datos o en Google Drive.
+        </p>
+        <img src="img/tipo-contenido.png" alt="Tipos de datos de contenido">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Enumerados 1, 2 y 3</h3>
+        <p>
+          Los campos enumerados (Enum o EnumList) permiten seleccionar valores predefinidos en una lista.  
+          Pueden ser de tipo texto, número o incluso referencias.  
+          Son útiles para opciones como “Activo/Inactivo” o “Alta/Media/Baja”.
+        </p>
+        <img src="img/tipo-enumerado.png" alt="Tipos de datos enumerados">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Mapeables 1 y 2</h3>
+        <p>
+          Los datos mapeables incluyen ubicaciones geográficas, coordenadas o direcciones.  
+          AppSheet puede usar Google Maps para mostrar estos datos en un mapa interactivo.  
+          Son ideales para aplicaciones que requieren rastreo o ubicaciones.
+        </p>
+        <img src="img/tipo-mapeable.png" alt="Tipos de datos mapeables">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Show</h3>
+        <p>
+          El tipo “Show” no almacena información del usuario, sino que sirve para mostrar texto o imágenes dentro de la aplicación.  
+          Se usa como etiqueta, título o instrucciones dentro de los formularios.
+        </p>
+        <img src="img/tipo-show.png" alt="Tipo de dato show">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Control de Cambios</h3>
+        <p>
+          Este tipo permite registrar cuándo y quién realizó modificaciones en los datos.  
+          Es útil para llevar control de versiones o auditorías dentro de la app.  
+          Incluye campos como “Last modified by” o “Last updated”.
+        </p>
+        <img src="img/tipo-control.png" alt="Tipo de dato control cambios">
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tipos de Datos – Otros</h3>
+        <p>
+          AppSheet incluye otros tipos de datos como <b>Email</b>, <b>Phone</b>, <b>URL</b> o <b>Yes/No</b>,  
+          que ayudan a validar y mostrar la información de manera correcta según su naturaleza.  
+          Cada tipo de dato tiene propiedades específicas para su formato.
+        </p>
+        <img src="img/tipo-otros.png" alt="Otros tipos de datos">
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CBTis 162 - Programación</p>
+  </footer>
+</body>
+</html>
